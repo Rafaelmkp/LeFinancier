@@ -1,0 +1,26 @@
+{
+  "name": "lefinancier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "LeFinancier"
+  },
+  "keywords": [
+    "finance",
+    "node",
+    "web"
+  ],
+  "author": "RafaelMkp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
