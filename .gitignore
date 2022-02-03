@@ -84,3 +84,6 @@ dist
 
 # FuseBox cache
 .fusebox/
+
+#data files
+/backend/users.json
