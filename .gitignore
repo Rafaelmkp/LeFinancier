@@ -86,4 +86,7 @@ dist
 .fusebox/
 
 #data files
-/backend/users.json
+/backend/data/
+
+#Javascript transpiled output
+dist/
