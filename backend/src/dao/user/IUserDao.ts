@@ -1,11 +1,12 @@
 import User from '../../model/User';
+import IDao from '../IDao';
 
-export default interface IUserDao {
+export default interface IUserDao extends IDao {
   createUser(user: User): User;
 
   readUser(id: number): User;
 
-  readAllUsers(): User[];
+  readAllUsers(): Promise<User[]>;
 
   updateUser(user: User): User;
 
