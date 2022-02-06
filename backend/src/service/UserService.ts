@@ -1,4 +1,4 @@
-import IUserDao from "../dao/user/IUserDao";
+import { IUserDao } from "../dao/daoInterfaces";
 import User from "../model/User";
 
 export default class UserService {
@@ -9,6 +9,6 @@ export default class UserService {
   }
 
   async readAllUsers(): Promise<User[]> {
-    return this.userDao.readAllUsers();
+    return this.userDao.getAllUsers();
   }
 }

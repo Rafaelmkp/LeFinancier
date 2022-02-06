@@ -1,6 +1,5 @@
-import IFTransaction from "../ftransaction/IFTransaction";
-import IUserDao from "../user/IUserDao";
-import UserFileDao from "../user/UserFileDao";
+import { IUserDao, IFTransactionDao } from "../daoInterfaces";
+import UserFileDao from "../filedao/UserFileDao";
 import IDaoFactory from "./IDaoFatory";
 
 export default class FileDaoFactory implements IDaoFactory {
@@ -16,7 +15,7 @@ export default class FileDaoFactory implements IDaoFactory {
     return UserFileDao.Instance;
   }
 
-  getFTransaction(): IFTransaction {
+  getFTransaction(): IFTransactionDao {
     throw new Error("Method not implemented.");
   }
 }

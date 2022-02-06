@@ -1,6 +1,6 @@
 import express, { NextFunction, Request, Response } from 'express';
-import UserFileDao from '../../dao/user/UserFileDao';
-import UserService from '../../service/UserSerivce';
+import UserFileDao from '../../dao/filedao/UserFileDao';
+import UserService from '../../service/UserService';
 
 const userDao = UserFileDao.Instance;
 const userSerive = new UserService(userDao);
@@ -15,7 +15,7 @@ router.post('/new-user', async (req, res, next) => {
 router.get('/users', async (req, res, next) => {
   const userDao = UserFileDao.Instance;
   try{
-    const users = await userDao.readAllUsers();
+    const users = await userDao.getAllUsers();
     res.status(200).send(users);
   } catch (err) {
     console.log(err);

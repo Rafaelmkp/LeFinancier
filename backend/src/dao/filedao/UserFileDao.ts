@@ -3,8 +3,8 @@ import { existsSync } from 'fs';
 
 import User from "../../model/User";
 import { FileDao } from '../typePool';
-import IUserDao from "./IUserDao";
-import UserConstants from './UserConstants';
+import { IUserDao } from "../daoInterfaces";
+import UserConstants from '../UserConstants';
 
 const { readFile, writeFile } = fsPromises;
 
@@ -37,23 +37,24 @@ export default class UserFileDao extends FileDao implements IUserDao {
     }
   }
 
-  createUser(user: User): User {
+  createUser(user: User): Promise<User> {
     throw new Error("Method not implemented.");
   }
 
-  readUser(id: number): User {
+  getUser(id: number): Promise<User> {
     throw new Error("Method not implemented.");
   }
 
-  async readAllUsers(): Promise<User[]> {
+  async getAllUsers(): Promise<User[]> {
     const data = JSON.parse((await readFile(UserFileDao.USER_FILE_FULL_NAME)).toString());
     return data.users;
   }
 
-  updateUser(user: User): User {
+  updateUser(user: User): Promise<User> {
     throw new Error("Method not implemented.");
   }
-  deleteUser(id: number) {
+
+  deleteUser(user: User): any {
     throw new Error("Method not implemented.");
   }
 }
