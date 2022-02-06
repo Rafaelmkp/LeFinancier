@@ -1,8 +1,8 @@
 import express, { NextFunction, Request, Response } from 'express';
-import UserFileDao from '../../dao/filedao/UserFileDao';
+import DaoTypeMapper from '../../dao/DaoTypeMapper';
 import UserService from '../../service/UserService';
 
-const userDao = UserFileDao.Instance;
+const userDao = DaoTypeMapper.CONNECTION_MAP.get("FILE")!!.getUserDao();
 const userSerive = new UserService(userDao);
 
 const router = express.Router();
@@ -13,9 +13,8 @@ router.post('/new-user', async (req, res, next) => {
 
 
 router.get('/users', async (req, res, next) => {
-  const userDao = UserFileDao.Instance;
   try{
-    const users = await userDao.getAllUsers();
+    const users = userSerive.getAllUsers();
     res.status(200).send(users);
   } catch (err) {
     console.log(err);
