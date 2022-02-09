@@ -84,3 +84,9 @@ dist
 
 # FuseBox cache
 .fusebox/
+
+#data files
+/backend/data/
+
+#Javascript transpiled output
+dist/
