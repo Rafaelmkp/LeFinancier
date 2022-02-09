@@ -1,10 +1,10 @@
 export default class User {
   id?: number;
-  name: String;
-  email: String;
-  phone: String;
+  name: string;
+  email: string;
+  phone: string;
 
-  constructor(name: String, email: String, phone: String, id?: number) {
+  constructor(name: string, email: string, phone: string, id?: number) {
     this.id = id;
     this.name = name;
     this.email = email;
