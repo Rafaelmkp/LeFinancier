@@ -46,7 +46,7 @@ export default class UserFileDao extends FileDao implements IUserDao {
     data.nextIndex++;
     user.id = data.nextIndex;
     data.users.push(user);
-    await writeFile(UserFileDao.USER_FILE_FULL_NAME, data);
+    await writeFile(UserFileDao.USER_FILE_FULL_NAME, JSON.stringify(data));
     return user;
   }
 
