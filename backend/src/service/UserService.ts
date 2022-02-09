@@ -8,6 +8,10 @@ export default class UserService {
     this.userDao = userDao;
   }
 
+  async createUser(user: User): Promise<User> {
+    return this.userDao.createUser(user);
+  }
+
   async getAllUsers(): Promise<User[]> {
     return this.userDao.getAllUsers();
   }
