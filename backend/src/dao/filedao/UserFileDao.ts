@@ -37,8 +37,17 @@ export default class UserFileDao extends FileDao implements IUserDao {
     }
   }
 
-  createUser(user: User): Promise<User> {
-    throw new Error("Method not implemented.");
+  async createUser(user: User): Promise<User> {
+    if(!this.isValidEmail(user.email) ||!this.isValidPhone(user.phone)) {
+      throw new Error("wrong information");
+    }
+    
+    const data = JSON.parse(await readFile(UserFileDao.USER_FILE_FULL_NAME, 'utf-8'));
+    data.nextIndex++;
+    user.id = data.nextIndex;
+    data.users.push(user);
+    await writeFile(UserFileDao.USER_FILE_FULL_NAME, data);
+    return user;
   }
 
   getUser(id: number): Promise<User> {
@@ -56,5 +65,20 @@ export default class UserFileDao extends FileDao implements IUserDao {
 
   deleteUser(user: User): any {
     throw new Error("Method not implemented.");
+  }
+
+  private isValidEmail(email: string): boolean {
+    return email.length > 1 
+          && email.includes('@') 
+          && email.includes('.com');
+  }
+
+  private isValidPhone(phone: string): boolean {
+    return phone.length > 5 
+          && hasNoCharacter(phone);
+
+    function hasNoCharacter(phone: string) {
+      return !/^[a-zA-Z]*$/.test(phone);
+    }
   }
 }
