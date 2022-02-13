@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './Routes';
+import MyRoutes from './Routes';
 
 import './Style/App.css';
+import './Style/colors.css';
 import './Style/grid.css';
+import './Style/general.css';
+import './Style/header.css';
 import './Style/input.css';
 
 
-ReactDOM.render( <Routes />, document.getElementById('root') );
+ReactDOM.render( <MyRoutes />, document.getElementById('root') );

@@ -1,11 +1,14 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PageSignUp from './Pages/PageSignUp';
 
-function Routes() {
+function MyRoutes() {
   return (
     <Router forceRefresh>
-      <Route path='/sign' exact component={} />
+      <Routes>
+        <Route path='/sign' exact element={PageSignUp()} />
+      </Routes>
     </Router>
   );
 }
 
-export default App;
+export default MyRoutes;
