@@ -1,14 +1,19 @@
 import React from 'react'
 
-export default function Input({name, type, placeholder, disabled, required}) {
+export default function Input({label, name, type, placeholder, disabled, required}) {
   return (
-    <input 
-      id={name}
-      name={name}
-      type={type}
-      placeholder={placeholder}
-      disabled={disabled}
-      required={required}
-    />
+    <div className='input-field'>
+      <label htmlFor={name}>
+        {label}
+      </label>
+      <input 
+        id={name}
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        disabled={disabled}
+        required={required}
+      />
+    </div>
   );
 }
