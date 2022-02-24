@@ -21,9 +21,7 @@ export default function PageSignUp() {
           <div className='row'>
             <div className='col m2 l2 xl2' ></div>
             <div className='col s12 m10 l10 xl10'>
-              <div className='row'>
-                <FormSignUp onSubmit={submitForm}/>
-              </div>
+              <FormSignUp onSubmit={submitForm}/>
             </div>
           </div>
         </div>

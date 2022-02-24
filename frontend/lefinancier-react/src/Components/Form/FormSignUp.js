@@ -11,7 +11,7 @@ export default function FormSignUp({onSubmit}) {
   }
 
   return (
-    <Form className='col s12 m12 l12 xl12' onSubmit={(evt) => handleSubmit(evt)}>
+    <Form onSubmit={(evt) => handleSubmit(evt)}>
       <InputText
         label='Username'
         name='username'
