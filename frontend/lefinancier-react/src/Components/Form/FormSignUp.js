@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonForm from '../Button/ButtonForm';
 import InputEmail from '../Input/InputEmail';
 import InputPhone from '../Input/InputPhone';
 import InputText from '../Input/InputText';
@@ -30,7 +31,7 @@ export default function FormSignUp({onSubmit}) {
         placeholder='Insert your phone number'
         required={true}
       />
-      <input type="submit"/>
+      <ButtonForm type='submit' text='Sign Up' />
     </Form>
   )
 }
