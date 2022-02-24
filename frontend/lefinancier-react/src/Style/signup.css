@@ -1,0 +1,14 @@
+.signup-form {
+  clip-path: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .signup-form {
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+  }
+}
+
+.signup-side-info {
+  padding: 4rem 0;
+  margin-right: -50%;
+}
