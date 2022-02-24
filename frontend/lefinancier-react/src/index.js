@@ -8,6 +8,7 @@ import './Style/grid.css';
 import './Style/general.css';
 import './Style/header.css';
 import './Style/input.css';
+import './index.css';
 
 
 ReactDOM.render( <MyRoutes />, document.getElementById('root') );
