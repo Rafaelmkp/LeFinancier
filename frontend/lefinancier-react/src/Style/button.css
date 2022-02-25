@@ -1,18 +1,21 @@
 .button-form {
-  border: 2px solid black;
+  border: 2px solid #23353B;
   border-radius: 4px;
   line-height: 1.5rem;
+  font-size: 1.0rem;
+  background-color: #23233B;
 }
 
 .button-form:disabled {
-  background-color: grey;
+  background-color: #C5C6C6;
 }
 
 .button-form:hover {
-  background-color: white;
-  border: 2px solid lightgray;
+  background-color: #2C3968;
+  border-color: #2C4268;
 }
 
 .button-form:active {
-  background-color: blue;
+  background-color: #23153B;
+  border-color: #23133B;
 }
