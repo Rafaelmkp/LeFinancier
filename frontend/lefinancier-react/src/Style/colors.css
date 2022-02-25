@@ -1,3 +1,5 @@
+/* BACKGROUND COLORS */
+
 .dark-blue-1 {
   background-color: #001233;
 }
@@ -72,4 +74,81 @@
 
 .white-1 {
   background-color: #EBEBEB;
+}
+
+/* TEXT COLORS */
+.txt-dark-blue-1 {
+  color: #001233;
+}
+
+.txt-dark-blue-2 {
+  color: #001845;
+}
+
+.txt-dark-blue-3 {
+  color: #002855;
+}
+
+.txt-dark-blue-5 {
+  color: #023E7D;
+}
+
+.txt-dark-grey-1 {
+  color: #5C5C5C;
+}
+
+.txt-dark-grey-2 {
+  color: #7D7D7D;
+}
+
+.txt-dark-grey-3 {
+  color: #969696;
+}
+
+.txt-dark-grey-4 {
+  color: #9B9C9B;
+}
+
+.txt-dark-purple-1 {
+  color: #23233B;
+}
+
+.txt-light-blue-1 {
+  color: #0353A4;
+}
+
+.txt-light-blue-2 {
+  color: #0466c8;
+}
+
+.txt-light-blue-3 {
+  color: #007bba;
+}
+
+.txt-light-blue-4 {
+  color: #7CCDF4;
+}
+
+.txt-light-blue-5 {
+  color: #BCE3FA;
+}
+
+.txt-light-grey-1 {
+  color: #ABABAB;
+}
+
+.txt-light-grey-2 {
+  color: #B2B0B0;
+}
+
+.txt-light-grey-3 {
+  color: #C5C6C6;
+}
+
+.txt-light-purple-1 {
+  color: #2C4268;
+}
+
+.txt-white-1 {
+  color: #EBEBEB;
 }
