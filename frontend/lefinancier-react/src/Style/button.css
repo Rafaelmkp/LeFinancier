@@ -19,3 +19,23 @@
   background-color: #23153B;
   border-color: #23133B;
 }
+
+.button-header {
+  display: inline-block;
+  border-left: 3px solid #23233B;
+  background-color: transparent;
+  padding: 5px;
+  margin: 5px 3px;
+  text-decoration: none;
+  color: #c5c6c6;
+}
+
+.button-header:hover {
+  background-color: rgba(188, 227, 250, 0.3);
+}
+
+.button-header:active {
+  border-color: #7CCDF4;
+  background-color: #7CCDF4;
+  color: #23233b;
+}
