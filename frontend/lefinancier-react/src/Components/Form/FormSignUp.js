@@ -31,7 +31,10 @@ export default function FormSignUp({onSubmit}) {
         placeholder='Insert your phone number'
         required={true}
       />
-      <ButtonForm type='submit' text='Sign Up' />
+      <div className='form-button-wrapper'>
+        <ButtonForm type='submit' text='Sign Up' />
+        <ButtonForm type='reset' text='Clear' />
+      </div>
     </Form>
   )
 }
