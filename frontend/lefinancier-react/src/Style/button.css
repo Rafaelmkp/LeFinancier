@@ -1,9 +1,9 @@
 .button-form {
+  background-color: #23233B;
   border: 2px solid #23353B;
   border-radius: 4px;
   line-height: 1.5rem;
   font-size: 1.0rem;
-  background-color: #23233B;
 }
 
 .button-form:disabled {
@@ -22,12 +22,13 @@
 
 .button-header {
   display: inline-block;
-  border-left: 3px solid #23233B;
-  background-color: transparent;
   padding: 5px;
-  margin: 5px 3px;
-  text-decoration: none;
+  background-color: transparent;
+  border-left: 3px solid #23233B;
   color: #c5c6c6;
+  text-decoration: none;
+  line-height: 100%;
+  box-sizing: border-box;
 }
 
 .button-header:hover {
@@ -35,7 +36,7 @@
 }
 
 .button-header:active {
-  border-color: #7CCDF4;
   background-color: #7CCDF4;
-  color: #23233b;
+  border-color: #7CCDF4;
+  color: #2C4268;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import ButtonHeader from '../Button/ButtonHeader';
 
 export default function Header() {
   const [isScrollOnTop, setIsScrollOnTop] = useState(true);
@@ -16,8 +17,14 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={classNames}>
+    <header className={`${classNames} header`}>
       <h2>This is in a header</h2>
+      <div className='menu-header'>
+        <ButtonHeader to='/' text='Home'/>
+        <ButtonHeader to='/' text='About' />
+        <ButtonHeader to='/' text='Help' />
+        <ButtonHeader to='/' text='Help' />
+      </div>
     </header>
   )
 }
