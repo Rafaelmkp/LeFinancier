@@ -1,23 +1,44 @@
 .button-form {
-  background-color: #23233B;
-  border: 2px solid #23353B;
+  border: 2px solid;
   border-radius: 4px;
   line-height: 1.5rem;
   font-size: 1.0rem;
 }
 
-.button-form:disabled {
+.submit {
+  background-color: #23233B;
+  border-color: #23353B;
+  color: #EBEBEB;
+}
+
+
+.button-form.submit:disabled {
   background-color: #C5C6C6;
 }
 
-.button-form:hover {
+.button-form.submit:hover {
   background-color: #2C3968;
   border-color: #2C4268;
 }
 
-.button-form:active {
+.button-form.submit:active {
   background-color: #23153B;
   border-color: #23133B;
+}
+
+.reset {
+  background-color: #0466c8;
+  border-color: #EBEBEB;
+  color: #EBEBEB;
+}
+
+.button-form.reset:hover {
+  background-color: #0476c8;
+}
+
+.button-form.reset:active {
+  background-color: #EBEBEB;
+  color: #0466c8;
 }
 
 .button-header {
