@@ -6,7 +6,7 @@ import SignUpSideInfo from '../Components/SignUpSideInfo';
 import '../Style/signup.css';
 
 export default function PageSignUp() {
-  const submitForm = () => {
+  const submitForm = (userData) => {
     console.log("signed up!!");
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from './Input';
 
-export default function InputText({label, name, placeholder, disabled, required}) {
+export default function InputText({label, name, placeholder, disabled, required, onChange, value}) {
   return (
     <Input
       label={label}
@@ -10,6 +10,8 @@ export default function InputText({label, name, placeholder, disabled, required}
       placeholder={placeholder}
       disabled={disabled}
       required={required}
+      onChange={onChange}
+      value={value}
     />
   )
 }
