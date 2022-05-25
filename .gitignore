@@ -90,3 +90,13 @@ dist
 
 #Javascript transpiled output
 dist/
+
+#intellij project
+.idea/
+
+#Gradle projects
+.gradle/
+build/
+gradle/
+gradlew*
+
